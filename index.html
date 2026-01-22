@@ -2,64 +2,27 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>YouTube Mockup</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-    }
-    .header {
-      height: 56px;
-      background: white;
-      border-bottom: 1px solid #ddd;
-      display: flex;
-      align-items: center;
-      padding: 0 16px;
-      font-weight: bold;
-    }
-    .container {
-      display: flex;
-    }
-    .sidebar {
-      width: 220px;
-      background: #f1f1f1;
-      height: calc(100vh - 56px);
-      padding: 10px;
-    }
-    .main {
-      padding: 20px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      flex: 1;
-    }
-    .video {
-      background: #ddd;
-      height: 180px;
-    }
-  </style>
+  <title>YouTube Header Mockup</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="header">YouTube</div>
-
-  <div class="container">
-    <div class="sidebar">
-      <p>Home</p>
-      <p>Shorts</p>
-      <p>Subscriptions</p>
+  <header class="yt-header">
+    <div class="left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" class="logo" />
     </div>
 
-    <div class="main">
-      <div class="video"></div>
-      <div class="video"></div>
-      <div class="video"></div>
-      <div class="video"></div>
-      <div class="video"></div>
-      <div class="video"></div>
+    <div class="center">
+      <input type="text" placeholder="검색" />
+      <button>🔍</button>
     </div>
-  </div>
+
+    <div class="right">
+      <span>➕</span>
+      <span>🔔</span>
+      <span class="profile">🙂</span>
+    </div>
+  </header>
 
 </body>
 </html>
