@@ -1,48 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>YouTube Header Mockup</title>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #ffffff;
-    }
+.yt-header {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  border-bottom: 1px solid #ddd;
+  background: white;
+}
 
-    .yt-header {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      height: 56px;
-      padding: 0 16px;
-      border-bottom: 1px solid #ddd;
-      box-sizing: border-box;
-      gap: 16px;
-    }
+.left .logo {
+  height: 20px;
+}
 
-    .yt-header img {
-      width: 24px;
-      height: 24px;
-      cursor: pointer;
-      display: block;
-    }
+.center {
+  display: flex;
+  width: 50%;
+}
 
-    .login {
-      height: 32px;
-      width: auto;
-    }
-  </style>
-</head>
+.center input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 2px 0 0 2px;
+}
 
-<body>
+.center button {
+  width: 60px;
+  border: 1px solid #ccc;
+  border-left: none;
+  background: #f8f8f8;
+  cursor: pointer;
+}
 
-  <header class="yt-header">
-    <img src="img/plus.png" alt="plus icon">
-    <img src="img/bell.png" alt="notification icon">
-    <img src="img/login.png" alt="login button" class="login">
-  </header>
+.right span {
+  margin-left: 16px;
+  cursor: pointer;
+}
 
-</body>
-</html>
+.profile {
+  background: #eee;
+  padding: 6px;
+  border-radius: 50%;
+}
