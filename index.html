@@ -1,49 +1,28 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>YouTube Header Mockup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-.yt-header {
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 16px;
-  border-bottom: 1px solid #ddd;
-  background: white;
-}
+  <header class="yt-header">
+    <div class="left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" class="logo" />
+    </div>
 
-.left .logo {
-  height: 20px;
-}
+    <div class="center">
+      <input type="text" placeholder="검색" />
+      <button>🔍</button>
+    </div>
 
-.center {
-  display: flex;
-  width: 50%;
-}
+    <div class="right">
+      <img src="img/plus.png" alt="plus icon">
+      <img src="img/bell.png" alt="notification icon">
+      <img src="img/login.png" alt="login button">
+    </div>
+  </header>
 
-.center input {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 2px 0 0 2px;
-}
-
-.center button {
-  width: 60px;
-  border: 1px solid #ccc;
-  border-left: none;
-  background: #f8f8f8;
-  cursor: pointer;
-}
-
-.right span {
-  margin-left: 16px;
-  cursor: pointer;
-}
-
-.profile {
-  background: #eee;
-  padding: 6px;
-  border-radius: 50%;
-}
+</body>
+</html>
