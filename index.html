@@ -1,27 +1,47 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>YouTube Header Mockup</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+    }
+
+    .yt-header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 56px;
+      padding: 0 16px;
+      border-bottom: 1px solid #ddd;
+      box-sizing: border-box;
+      gap: 16px;
+    }
+
+    .yt-header img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      display: block;
+    }
+
+    .login {
+      height: 32px;
+      width: auto;
+    }
+  </style>
 </head>
+
 <body>
 
   <header class="yt-header">
-    <div class="left">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" class="logo" />
-    </div>
-
-    <div class="center">
-      <input type="text" placeholder="검색" />
-      <button>🔍</button>
-    </div>
-
-    <div class="right">
-      <span>➕</span>
-      <span>🔔</span>
-      <span class="profile">🙂</span>
-    </div>
+    <img src="img/plus.png" alt="plus icon">
+    <img src="img/bell.png" alt="notification icon">
+    <img src="img/login.png" alt="login button" class="login">
   </header>
 
 </body>
